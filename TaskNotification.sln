@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C1553DD5-87CA-4FBA-AD54-34726FABBEDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1EC43BA9-7B4E-453F-88B5-5DBF00FBDF88}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TaskNotification", "src\TaskNotification\TaskNotification.xproj", "{E54E463F-B8EF-4231-90BF-ACAE1533BB43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E54E463F-B8EF-4231-90BF-ACAE1533BB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E54E463F-B8EF-4231-90BF-ACAE1533BB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E54E463F-B8EF-4231-90BF-ACAE1533BB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E54E463F-B8EF-4231-90BF-ACAE1533BB43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E54E463F-B8EF-4231-90BF-ACAE1533BB43} = {C1553DD5-87CA-4FBA-AD54-34726FABBEDE}
+	EndGlobalSection
+EndGlobal

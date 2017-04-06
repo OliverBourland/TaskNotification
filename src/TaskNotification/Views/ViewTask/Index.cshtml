@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TaskNotify>
+@{
+    ViewBag.Title = "View Tasks";
+}
+
+<div class="bg-primary panel-body"><h4>Task</h4></div>
+<div class="text-danger" asp-validation-summary="All"></div>
+<table class="table table-condensed table-bordered">
+    <tr><th>Due Date</th><th>Body</th><th>From</th><th>Post Date</th></tr>
+    @foreach (var m in Model)
+    {
+        <tr>
+           <td>@m.DueDate</td>
+           <td>@m.Body    </td>      
+           <td>@m.PostedBy.Name</td>
+            <td>@m.CreationDate</td>
+        </tr>
+           
+    }
+    </table>
+
+
+
+
+
+
+
+
+

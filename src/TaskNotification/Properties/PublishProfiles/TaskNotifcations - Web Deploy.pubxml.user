@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFlcM+SLRi06HpZmrHz37WwAAAAACAAAAAAAQZgAAAAEAACAAAAAXuQvS9M46UpWoUO+I2kXDNaF0lXJOFU6TFwrHzS7tQgAAAAAOgAAAAAIAACAAAADR2kdEJmlcOcrqMrnn3+7gBT0/psAiSHM1FYXeWUZGvIAAAADDDajCw6Th+S1ULlkFR4FcHi+VnzCtzm/GM6k9rPKZXwRcvPcdPMAN+cTjcMcKxuXQJK7R1mBE4NBLpxUhrAl0I5/Lr7ZcNi+d+MBMMXi6unfvJn/w5XAedKB60xTRjKcgczKyNCD0x5B9CSJ32IE1nTWIDNmHnvr0pws/IHjBd0AAAADDr4N4EwjIw9WnJ+I9Slvxnes/0lDc/EkeE9XPhjPf/4Cmxkr5x/noGbEykbo649vx0ohTB+Y5ZMX/Zkanow7d</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <EfMigrations Include="TaskNotification.Repositories.AppIdentityDbContext">
+      <Value>Server=tcp:tasknotificationsdb.database.windows.net,1433;Initial Catalog=tasknotificationDb;Persist Security Info=False;User ID=tasknotificationsadmin;Password=Tasknotifications1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</Value>
+    </EfMigrations>
+    <EfMigrations Include="TaskNotification.Repositories.ApplicationDbContext">
+      <Value>Server=tcp:tasknotificationsidentity.database.windows.net,1433;Initial Catalog=tasknotificationsIdentity;Persist Security Info=False;User ID=tasknotificationsidentity;Password=Tasknotifications1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</Value>
+    </EfMigrations>
+  </ItemGroup>
+</Project>

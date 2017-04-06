@@ -1,0 +1,29 @@
+﻿@model TaskViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{ 
+    ViewBag.Title = "Task Form";
+}
+
+<h1>Enter a task</h1>
+
+<form asp-controller="TaskForm" asp-action="TaskForm" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input asp-for=UserId type="hidden" />
+    <label asp-for=OrderId></label>
+    <input asp-for=OrderId />
+    
+    <label asp-for=Title></label>
+    <input asp-for=Title />
+    <span asp-validation-for=Title class="text-danger"></span>
+
+    <label asp-for=Body></label>
+    <input asp-for=Body />
+   
+
+    <label asp-for=DueDate></label>
+    <input asp-for=DueDate value="03/28/2017 2:00pm"/>
+
+
+
+    <button type="submit">Submit</button>
+</form>

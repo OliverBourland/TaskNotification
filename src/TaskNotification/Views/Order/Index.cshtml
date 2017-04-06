@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Order>
+@{
+    ViewBag.Title = "Order";
+}
+
+<div class="bg-primary panel-body"><h4>Orders</h4></div>
+<div class="text-danger" asp-validation-summary="All"></div>
+<table class="table table-condensed table-bordered">
+    <tr><th>Order ID</th><th>Title</th><th>Customer</th><th>Due Date</th><th>Date In</th></tr>
+    @if (Model.Count() == 0)
+    {
+        <tr><td colspan="3" class="text-center">No Orders</td></tr>
+    }
+    else
+    {
+        foreach (var m in Model)
+        { 
+            <tr>
+                <td>@m.OrderID</td>
+                <td>@m.Title</td>
+                <td>@m.Customer.Company</td>
+                <td>@m.DueDate</td>
+                <td>@m.CreationDate</td>
+                <td><a asp-controller="Order" asp-action="TasksForOrder" asp-route-Order="@m.OrderID" class="btn btn-sm btn-primary">View Tasks For This Order</a></td>            
+            </tr>
+        }
+    }
+</table>
+
+
